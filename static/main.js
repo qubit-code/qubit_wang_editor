@@ -76,7 +76,7 @@ define(['jquery'], function ($) {
                         
                             // 点击菜单时触发的函数
                             exec(editor, value) {
-                                parent.ESA.fun.open(ESAConfig.pop_url.attachment,"图片选择器",{
+                                parent.ESA.fun.open(ESAConfig.pop.attachment,"图片选择器",{
                                     maxmin  : false,
                                     data    : {mimetype:"image/*"}, 
                                     callback: function(data){
@@ -84,7 +84,7 @@ define(['jquery'], function ($) {
                                             $.each(data,function(key,value){
                                                 editor.insertNode({
                                                     type: 'image',
-                                                    src: value.src,
+                                                    src: value.show,
                                                     alt: key,
                                                     href: value.src,
                                                     children: [{text:""}]
