@@ -34,7 +34,6 @@ define(['jquery'], function ($) {
                 let that = $(this);
                 let name = $(this).attr("name");
                 $(this).css("display","none");
-                ESA.clog(name+"开始处理editor");
                 let editor_name = "esa_editor_"+name;
                 // let textarea_name = "esa_editor_textarea_"+name;
                 $(this).parent().prepend("<div id='"+editor_name+"' style='border: 1px solid #ccc;'><div id='"+editor_name+"-toolbar-container' style='border-bottom: 1px solid #ccc;'></div><div id='"+editor_name+"-editor-container' style='height:500px'></div></div>")
