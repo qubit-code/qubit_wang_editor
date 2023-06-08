@@ -6,6 +6,6 @@ use esa\AddonsHook;
 class Hooks extends AddonsHook
 {
     public function jsBehaviorRequire(){
-        return ["/static/addons/qubit_wang_editor/main.js"];
+        return ["/static/addons/qubit_wang_editor/main.js?adv=".$this->addon_version];
     }
 }
